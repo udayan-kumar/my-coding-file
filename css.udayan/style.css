@@ -1,0 +1,403 @@
+*{
+   
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+/* filter property  */
+ img{
+    height: 400px;
+    width: 400px;
+    
+    margin: 10px;
+   filter: blur(0px);
+}
+
+/* shape property  */
+.box{
+    height: 200px;
+    width: 300px;
+    background-color: rgb(210, 93, 165);
+    clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+}
+
+/* image hover effect propert */
+.firstbox img{
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    transition: all ease 1s;
+}
+.firstbox :hover{
+    scale: 1.2;
+}  
+
+/* shadow effect property */
+/* button{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 400px;
+    border-radius: 3px;
+    border: none;
+    color: white; 
+    background-color: rgb(96, 96, 228);
+    transition: all ease 1s;
+}
+button:hover{
+    box-shadow: 5px 5px 10px rgb(23, 23, 23);
+}  */
+
+/* image in text propert */
+/* h1 {
+    font-size: 50px;
+    font-weight: 1000;
+    background-image: url(abstract-colorful-paper-cut-wave-background_474888-7157.avif);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+} */ 
+
+/* linear grideant effect property */
+.grid {
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(rgb(131, 18, 18), rgb(54, 54, 180));
+}
+
+/* border grideant effect */
+.gola {
+    height: 400px;
+    width: 400px;
+    /* margin-left: 400px; */
+    border-radius: 50%;
+    background: linear-gradient(rgb(86, 86, 5),rgb(106, 72, 9),rgb(120, 15, 15),rgb(15, 15, 97),rgb(120, 16, 120));
+    padding: 2px;
+}
+.gola img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* shadow effect on image property */
+.shadow img{
+  filter: drop-shadow(10px 10px 20px black);
+}
+
+/* border on text property */
+.name {
+    font-size: 100px;
+    font-weight: 1000;
+    -webkit-text-stroke: 4px black;
+    color: transparent;
+}
+
+/* selector effect on text property */
+.selectors h2{
+    font-size: 90px;
+    text-transform: uppercase;
+    font-weight: 1000;
+}
+.selectors h2::selection {
+    color: rgb(130, 130, 41);
+    background-color: black;
+}
+
+/* colourfull effect property */
+body::-webkit-scrollbar{
+    background-color: transparent;
+
+}
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(95, 14, 14),rgb(178, 178, 60),rgb(65, 65, 196),rgb(100, 31, 100),rgb(230, 164, 42));
+    border-radius: 20px;
+}
+
+/* loader effect property */
+.loader{
+    height: 300px;
+    width: 300px;
+    border: 10px solid rgb(179, 176, 176);
+    border-radius: 50%;
+    border-top-color: black;
+    animation: rotate 1s infinite;
+}
+@keyframes rotate {
+    100%{
+        rotate: 360deg;
+    }
+
+}
+
+/* underline effect property */
+.underline{
+    font-size: 100px;
+    font-weight: 1000;
+    position: relative;
+}
+.underline h1::after{
+    content:"" ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0px;
+    background-color: black;
+    transition: all ease 1s;
+}
+.underline h1:hover::after{
+    width: 100%;
+}
+
+/* uses of ::after and ::before */
+.baad h2::after{
+    content: "UDAYAN";
+    color: red;
+}
+.baad h2::before{
+    content: "UDAYAN";
+    color: blue;
+}
+
+/* active selector effect property */
+.jaag button{
+    padding: 10px 20px;
+    background-color: rgb(72, 72, 176);
+    font-weight: 600;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    transition: all ease 1s;
+}
+.jaag button:active{
+    scale: 2;
+}
+
+/* image ke niche se uper ki taraph shadow effect property */
+/* #parchhai{
+    height: 400px;
+    width: 400px;
+    background-image: url(b114d63da771df46e150132b835cc942dfbbd1626ee62b01dbba7651fdc752cf._SX1080_FMjpg_.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+#niche{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent,red);
+    position: absolute;
+    bottom: -40%;
+} */
+
+/* horizontal scroling property */
+.parent{
+    background-color: lightblue;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.child{
+    height: 300px;
+    width: 300px;
+    background-color: salmon;
+    margin: 10px;
+    display: inline-block;
+}
+
+/* splash effect property */
+/* .splash img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    object-position: top;
+    -webkit-mask-image: url(./blackimg.png);
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: centre;
+    mask-image: url(./blackimg.png);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+} */
+
+/* heart image property */
+.dill{
+    height: 200px;
+    width: 200px;
+    margin-left: 70px;
+    margin-top: 90px;
+    background-color: red;
+    position: relative;
+    rotate: -45deg;
+}
+.dill::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(50%, 0);
+}
+.dill::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(0, -50%);
+}
+
+/* background blur effect property */
+.secondbox{
+    height: 400px;
+    width: 400px;
+    background-image: url(./background.webp);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.secondbox h1{
+    font-size: 40px;
+    padding: 10px;
+    width: 100%;
+    
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: rgba(225, 220, 220, 0.693);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(1px);
+    
+
+}
+
+/* box ke under ki taraph shadow */
+.thirdbox{
+    margin-left: 200px;
+    height: 300px;
+    width: 300px;
+    background-color: #c1c1c1;
+    border-radius: 50px;
+    box-shadow: 20px 20px 60px black,inset -20px -20px 60px black;
+}
+
+/* linear Gradient on text property */
+.linear{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: black;
+}
+.linear h1{
+    font-size: 100px;
+    font-weight: 900;
+    text-align: center;
+    background: linear-gradient(to right,red,blue);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 60px rgb(171, 12, 12);
+    animation: anime 1s infinite alternate;
+
+}
+@keyframes anime {
+    100%{
+        text-shadow: 0 0 60px blue;
+    }
+    
+}
+
+/* prespective rotation effect property */
+.larki{
+    padding: 30px;
+    background-color: black;
+    margin-top: 30px;
+    perspective: 200px;
+}
+.larki img{
+    height: 200px;
+    transform: rotatey(20deg);
+    /* transform: rotateX(10deg); */
+}
+
+/* disable right click property */
+/* in html
+<body oncontextmenu="return false"> */
+
+/* resize property */
+.resize{
+    background-color: salmon;
+    color: white;
+    padding: 10px;
+    resize: both;
+    overflow: auto;
+    max-height: 200px;
+}
+
+/* rainbow wheel property */
+.fourthbox{
+    height: 300px;
+    width: 300px;
+    background: conic-gradient(violet,indigo,blue,green,yellow,orange,red,violet);
+    border-radius: 50%;
+    animation: rainbow 2s linear infinite ;
+    border: 2px solid black;
+}
+@keyframes rainbow{
+    100%{
+        rotate: 360deg;
+    }
+    
+}
+
+/* continue move border animation property */
+.fifthbox{
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    padding: 8px;
+    position: relative;
+    margin-top: 150px;
+    overflow: hidden;
+}
+.inner{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    z-index: 99;
+}
+.fifthbox::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    height: 600px;
+    width: 200px;
+    background-color: red;
+    animation: round 2s infinite;
+    
+    
+}
+@keyframes round {
+    100%{
+        transform: translate(-50%,-50%) rotate(225deg);
+    }
+}
