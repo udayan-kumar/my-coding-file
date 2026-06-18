@@ -1,0 +1,326 @@
+*{
+    margin: 0%;
+   
+    box-sizing: border-box;
+}
+
+#logo-img{
+    width: 100%;
+    height: 100%;
+}
+
+.bcg-img{
+    background-image: url(Netflix-logo.png);
+    background-size: cover;
+    height: 120px;
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 0px;
+    display: flex;
+}
+.img{
+   
+    position: relative;
+   
+    height: 1100px;
+    width: 1375px;
+    overflow: hidden; 
+}
+
+.img::before{
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left: o;
+    width: 100%;
+    height: 100%;
+    background-image: url(the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-fullview.jpg);
+    background-size: cover;
+    background-position: center;
+     filter: blur(4px);
+     transform: scale(1.1);
+    z-index: -1;  
+    color: rgb(114, 104, 104);
+}
+.border{
+    border: 2px solid gray;
+   
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 800px;
+    margin-top: 100px;
+    
+}
+.lang{
+    color: white;
+    border: 2px solid rgb(231, 52, 52);
+    font-size: 30px;
+    
+}
+
+p{
+    border: 2px solid rgb(165, 165, 165);
+    padding: 6px 36px 6px 34px;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(59, 56, 56);
+    border-radius: 0.4rem;
+}
+
+.sign-in{
+    border: 2px;
+    text-align: initial;
+    background-color: red;
+    padding: 6px 25px 6px 25px;
+    border-radius: 0.4rem;
+    display: inline-flex;
+    color: white;
+    font-weight: 100;
+    font-size: 22px;
+}
+
+.details{
+    color: white;
+    margin-left: 350px;
+    margin-top: 200px;
+    font-size: 30px;
+}
+
+.cinema{
+    color: white;
+    margin-left: 215px;
+    
+    font-size: 53px;
+}
+
+.amount{
+    border: 2px  ;
+    color: rgb(251, 234, 234);
+    margin-left: 465px;
+    margin-right: 555px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.restart{
+    color: rgb(249, 235, 235);
+     margin-left: 415px;
+     margin-right: 505px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     font-size: 18px;
+}
+
+.log-in{
+     margin-left: 465px;
+    margin-right: 555px;
+    height: 60px;
+    background-color: rgb(30, 28, 28);
+    border: 2px solid rgb(65, 61, 61);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.cat{
+    
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+input{
+    background-color: black;
+    height: 100%;
+    border: none;
+    margin-left: 15px;
+}
+::placeholder{
+    background-color: black;
+    border: black;
+    font-size: 20px;
+    color: rgb(201, 196, 196);
+    
+}
+
+.ready{
+    margin-left: 550px;
+    margin-top: 10px;
+    margin-right: 600px;
+    color: white;
+    border: 2px solid red;
+    font-size: 25px;
+    background-color: red;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.ready :hover{
+    border: 10px solid red;
+}
+
+.log-in :hover{
+    border: 4px solid black;
+}
+
+.dog :hover{
+    border: 5px solid black;
+}
+
+.tranding::before{
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left: o;
+    width: 100%;
+    height: 100%;
+    background-image:url(45998-1920x1080-desktop-full-hd-netflix-background-image.jpg);
+    background-size: cover;
+    background-position: center;
+     filter: blur(8px);
+     transform: scale(1.1);
+    z-index: -1;  
+    color: rgb(114, 104, 104);
+    margin-top: 1130px;
+}
+/* .tranding{
+    background-color: black;
+    height: 800px;
+    width: 1400px;
+    margin-top: 0px;
+} */
+.now{
+    margin-left: 100px;
+    margin-top: 20px;
+    font-weight: 80;
+    font-size: 40px;
+    color: white;
+}
+.movie-name{
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    overflow: hidden;
+   
+}
+
+/* .movie-name :hover{
+    border: 10px solid rgb(228, 10, 10);
+} */
+
+.movie-name :hover{
+    scale: 1.2;
+}
+.dhurandher{
+    height: 190px;
+    width: 150px;
+   background-image: url(MV5BNDhjNThiMjQtNTc0ZS00MjAxLTgyODItNDFkZjI5YjU0MDJhXkEyXkFqcGc@._V1_.jpg);
+   background-size: cover;
+   background-position: center;
+   transition: all ease 1s;
+}
+
+.kapil{
+    height: 190px;
+    width: 150px;
+   background-image: url(The-Great-Indian-Kapil-Show-kapil-sharma-The-Great-Indian-Kapil-Show-season-3-netflix-jpg.webp);
+   background-size: cover;
+   background-position: center;
+   transition: all ease 1s;
+}
+
+ 
+.berlin{
+    height: 190px;
+    width: 150px;
+   background-image: url(MV5BZjYzNTZjNDQtYmU4Ni00MGVkLWE2MGYtNzA3Mjc4Y2RhNzg3XkEyXkFqcGc@._V1_QL75_UX190_CR0,28,190,281_.jpg);
+   background-size: cover;
+   background-position: center;
+   transition: all ease 1s;
+}
+
+
+.kartavya{
+    height: 190px;
+    width: 150px;
+   background-image:url(MV5BZDg2MzhlN2YtYzU5ZC00OTZlLTgwNzctMjJmMzQ1ODQ1NDY2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);
+   background-size: cover;
+   background-position: center;
+   transition: all ease 1s;
+}
+
+.youth{
+    height: 190px;
+    width: 150px;
+   background-image:url(MV5BNDZmZTlmNDAtZGM4MS00MmVkLWEzMjEtMmNlOWI0ZjIzYzlhXkEyXkFqcGc@._V1_.jpg);
+   background-size: cover;
+   background-position: center;
+   transition: all ease 1s;
+}
+
+.second movie-name{
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    
+}
+
+.boarder{
+    height: 190px;
+    width: 150px;
+   background-image:url(Border-2-Movie-Review-2026-01-aafd44eb714ab059f66158d0e2502ea9.avif);
+   background-size: cover;
+   transition: all ease 1s;
+   background-position: center;
+}
+
+.bhul{
+    height: 190px;
+    width: 150px;
+   background-image:url(MV5BMjIyMTZiMGEtNmIyYi00MGI1LWFmY2MtYTMyZjBlYzljMDFlXkEyXkFqcGc@._V1_.jpg);
+   background-size: cover;
+   background-position: center;
+   transition: all ease 1s;
+}
+
+.thama{
+    height: 190px;
+    width: 150px;
+   background-image:url(Thamma_film_poster.jpg);
+   background-size: cover;
+   background-position: center;
+   transition: all ease 1s;
+}
+
+.bghi{
+    height: 190px;
+    width: 150px;
+   background-image:url(Baaghi_4.jpg);
+   background-size: cover;
+   background-position: center;
+   transition: all ease 1s;
+}
+
+.weapon{
+    height: 190px;
+    width: 150px;
+   background-image:url(MV5BNTBhNWJjZWItYzY3NS00M2NkLThmOWYtYTlmNzBmN2UxZWFjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);
+   background-size: cover;
+   background-position: center;
+   transition: all ease 1s;
+}
