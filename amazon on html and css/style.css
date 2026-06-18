@@ -1,0 +1,218 @@
+*{
+    margin: 0%;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height:60px ;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#nav-logo{
+    height: 50px;
+    width: 100px;
+}
+
+#logo{
+    background-image:url("images.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+.border{
+    border: 1.5px solid transparent;
+}
+
+.border:hover{
+    border: 1.5px solid lightcyan;
+}
+
+.tom{
+    font: 0.85rem;
+    display: flex;
+    color: #CCCCCC;
+    margin-left: 19px;  
+    
+}
+
+.com{
+    font: 1rem;
+    color: #FFFFFF;
+}
+
+.add-icon{
+    display: flex;
+}
+
+.nav address{
+    margin-left: 20px;
+   
+}
+
+i{
+    height: 20px;
+}
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #c93333;
+    width: 650px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.nav-search:hover{
+    border: 2px solid orange;
+}
+
+.search-select{
+    background-color: #E6E6E6;
+    color: #0F1111;
+    width: 5opx;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius:4px ;
+    border: none;
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+#nav-paragraph h5{
+    font-size: 12px;
+    font-weight: 6px;
+}
+
+#nav-paragraph h4{
+    font-size: 15px;
+     font-weight: 700;
+}
+
+#nav-paragraph h4 i{
+    font-size: 10px;
+    flex-direction: column-reverse;
+}
+
+#nav-paragraph:hover{
+    border: 1px solid orange;
+}
+
+#nav-return h5{
+    font-size: 12px;
+     font-weight: 700;
+}
+
+#nav-return h3 {
+    font-size: 15px;
+    flex-direction: column-reverse;
+
+}
+
+#nav-return h3 i {
+    font-size: 10px;
+    flex-direction: column-reverse;
+}
+
+#nav-return:hover{
+    border: 1px solid orange;
+}
+
+#nav-cart i{
+    font-size: 25px;
+    
+}
+#nav-cart:hover{
+    border: 1px solid orange;
+}
+
+.pannel{
+    width: 100%;
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #FFFFFF;
+    margin-right: 40px;
+}
+.pannel-option p{
+    font-size:0.85rem ;
+    font-weight: 700;
+    display: inline;
+    margin-left: 20px;
+}
+.hero-section{
+    background-image:url(71QcgptqadL._SX3000_.jpg);
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.hero-msg{
+    background-color:white ;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+}
+.hero-msg a{
+    color: #007185;
+}
+
+.shop-section{
+    
+    justify-content: space-evenly;
+    background-color:rgb(206, 82, 51);
+}
+.box{
+   
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 0px 10px 15px;
+    margin-top: 15px;
+}
+.box-img{
+    background-image: url(Fuji_Gaming_SingleImageCard_C-1._SY304_CB762596570_.jpg);
+    background-size: cover;
+    height: 320px;
+    margin-top: 1rem;
+    margin-bottom:1rem ;
+}
+
+
+.firstbox h5{
+    color: #2162a1;
+    
+    align-items: flex-end;
+    justify-content: center;
+}
+.box-contain{
+margin-left: 10px;
+margin-right: 10px;
+}
+.box-contain h2{
+margin-top: 10px;
+}
